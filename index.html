@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "form">
+        <div class="title">Percentage</div>
+        <div class="subtitle">Input your percentage and number</div>
+        <div class="subtitle">to receive the (number - percentage)</div>
+
+        <div class="input-container ic1">
+            <input type="number" id="percent" class="input"/>
+            <div class="cut"></div>
+            <label for="percent" class="placeholder">Percent Number</label>
+
+        </div>
+        <div class="input-container ic2">
+            <input type="number" id="num" class="input"/>
+            <div class="cut"></div>
+            <label for="number" class="placeholder">Number</label>
+        </div>    
+            <!-- onclick event is to call the function when
+                user click on the button-->
+            <button class="submit" onclick="percentage_1()">Calculate</button><br>
+    
+                <!-- Read-only input field to display 
+                output and cannot be modified -->
+        <div class="input-container ic2">
+            <input class="input" type="text" id="value1" readonly />
+            <div class="cut"></div>
+            <label for="input" class="placeholder">Total</label>
+        </div>
+    </div>
+    
+</body>
+</html>
